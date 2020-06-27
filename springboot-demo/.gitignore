@@ -22,3 +22,5 @@ mvnw.cmd
 *.ipr
 
 
+src/main/resources/static/
+src/main/resources/templates/

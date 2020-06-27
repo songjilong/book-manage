@@ -25,7 +25,7 @@
                     width="150">
                 <template slot-scope="scope">
                     <el-button @click="edit(scope.row)" type="text" size="small">编辑</el-button>
-                    <el-button @click="deleteBook(scope.row.id)" type="text" size="small">删除</el-button>
+                    <el-button @click="deleteBook(scope.row)" type="text" size="small">删除</el-button>
                 </template>
             </el-table-column>
         </el-table>
@@ -51,15 +51,26 @@
                     }
                 });
             },
-            deleteBook(id) {
-                axios.delete('http://localhost:8181/book/delete/' + id).then((resp) => {
-                    window.location.reload();
+            deleteBook(row) {
+                this.$confirm('确定删除要《'+row.name+"》吗？", '警告', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'error'
+                }).then(() => {
+                    axios.delete('http://localhost:8181/book/delete/' + row.id).then((resp) => {
+                        window.location.reload();
+                        this.$message({
+                            type: 'success',
+                            message: '删除成功!'
+                        });
+                    })
+                }).catch(() => {
                     this.$message({
-                        showClose: true,
-                        message: '删除成功',
-                        type: 'success'
+                        type: 'info',
+                        message: '已取消删除'
                     });
-                })
+                });
+
             },
             page(currentPage) {
                 const _this = this;

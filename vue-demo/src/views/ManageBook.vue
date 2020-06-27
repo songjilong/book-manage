@@ -3,9 +3,8 @@
         <el-table
                 :data="tableData"
                 border
-                style="width: auto">
+                style="width: 100%">
             <el-table-column
-                    fixed
                     prop="id"
                     label="编号"
                     width="150">

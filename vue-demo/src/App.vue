@@ -2,7 +2,7 @@
     <div id="app">
         <el-container style="height: 100%; border: 1px solid #eee">
             <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-                <el-menu router default-openeds="['0', '1']">
+                <el-menu router :default-openeds="['0']">
                     <el-submenu v-for="(item, index) in $router.options.routes" :index="index+''" v-if="item.show">
                         <template slot="title">
                             <i class="el-icon-message"></i>{{item.name}}
@@ -25,7 +25,7 @@
                             <el-dropdown-item>删除</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
-                    <span>王小虎</span>
+                    <span>小龙</span>
                 </el-header>
 
                 <el-main>

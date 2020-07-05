@@ -1,0 +1,24 @@
+七月 05, 2020 10:27:22 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [F:\Desktop\project\book-manage\springboot-demo\src\main\java\]
+七月 05, 2020 10:27:22 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: project type not set, try to figure out...
+七月 05, 2020 10:27:22 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : F:\Desktop\project\book-manage\springboot-demo\src\main\java\
+七月 05, 2020 10:27:22 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : BookController.java
+七月 05, 2020 10:27:22 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : BookController.java
+七月 05, 2020 10:27:23 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : BookController.java
+七月 05, 2020 10:27:23 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+七月 05, 2020 10:27:23 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : F:\Desktop\project\book-manage\springboot-demo\src\main\java\com\sjl\controller\BookController.java
+七月 05, 2020 10:27:23 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : F:\Desktop\project\book-manage\springboot-demo\src\main\java\com\sjl\controller\BookController.java
+七月 05, 2020 10:27:23 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+七月 05, 2020 10:27:23 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+七月 05, 2020 10:27:23 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!

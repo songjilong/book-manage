@@ -13,12 +13,17 @@ import java.util.List;
  * @date 2020/6/25 17:12
  */
 @RestController
-@RequestMapping("book")
+@RequestMapping("/book")
 public class BookController {
 
     @Autowired
     private BookService bookService;
 
+    /**
+     * 查询所有
+     *
+     * @return 查询结果
+     */
     @GetMapping("/findAll")
     public List<Book> findAllBook() {
         return bookService.findAll();

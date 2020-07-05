@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Book</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class Book implements Serializable{
+
+    private long id; //
+    private String name; //
+    private String author; //
+
+    public long getId(){
+        return id;
+    }
+
+    public void setId(long id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getAuthor(){
+        return author;
+    }
+
+    public void setAuthor(String author){
+        this.author = author;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

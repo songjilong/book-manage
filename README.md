@@ -8,18 +8,21 @@ Spring Boot + Vue 前后端分离的简单案例：图书管理后台系统。
 
 前端：
 
-- Vue
+- Vue.js
 - Element UI
 
 后端：
 
 - Spring Boot
 - Spring Data Jpa
+
+数据库：
+
 - MySQL
 
 API 文档：
 
-- JApiDocs：无需额外注解的 SpringBoot API 文档生成工具，它会将代码中的注释解析为 API 文档。但我在使用过程中发现了一些小问题，无法解析 Spring Data Jpa 的类（比如 Page）。
+- [JApiDocs](https://japidocs.agilestudio.cn/#/zh-cn/)：无需额外注解的 SpringBoot API 文档生成工具，它会将代码中的注释解析为 API 文档。但我在使用过程中发现了一些小问题，无法解析 Spring Data Jpa 的类（比如 Page）。
 
 # 准备
 
